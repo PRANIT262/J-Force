@@ -1,0 +1,8 @@
+com\pranitproject\controller\UserController.class
+com\pranitproject\service\UserServiceImpl.class
+com\pranitproject\service\UserServiceInterface.class
+com\pranitproject\PranitprojectApplication.class
+com\pranitproject\entity\Candidate.class
+com\pranitproject\dao\CandidateDaoJpa.class
+com\pranitproject\dao\UserDaoJpa.class
+com\pranitproject\entity\IndianUser.class
