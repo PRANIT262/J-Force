@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+<div class="bootstrap-wrapper" style="overflow: hidden;">
+
+    <div class="row ">
+
+
+        <div class="col-lg-6 ">
+            <div class="row">
+                <div class="col-md-3  ">
+                    <button [routerLink]="'/adminlogin'" class="ml20 mt20" mat-raised-button color="warn">Admin
+                        Login</button>
+                </div>
+                <div class="col-md-9"></div>
+
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-2"></div>
+                <div class="col-md-9 pad20 ">
+                    <mat-card class="pad20 mt10" >
+                        <div class="text-center">
+                            <img class="logo mt10" src="./../../../assets/login_logo.png" alt="Register image">
+                        </div>
+                        <p class="text-style-s text-center mt10">LOGIN HERE!</p>
+                        <form (ngSubmit)="onSubmit()" method="post">
+
+                            <mat-form-field appearance="outline"
+                            class="full-width mt10">
+                                <mat-label>USERNAME</mat-label>
+                                <input [(ngModel)]="user.userName" matInput placeholder="username" id="userName"
+                                    name="userName" />
+                            </mat-form-field>
+
+                            <mat-form-field appearance="outline"
+                             class="full-width">
+                                <mat-label>PASSWORD</mat-label>
+                                <input matInput id="password" name="password" [(ngModel)]="user.password"
+                                    placeholder="Password">
+                            </mat-form-field>
+
+                            <div class="text-center mt20 " style="margin-bottom: 30px;">
+                                <button class="btn  " mat-raised-button color="primary"
+                                    type="submit">Login</button>
+                            </div>
+                            <div class="text-center">
+                                
+                                <a routerLink="/register">Don't have an account?</a>
+                            </div>
+
+
+                        </form>
+
+                    </mat-card>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+             <img src=".//../../../assets/login.png" alt="Login Page" class="img">
+
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,9 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject, tap } from 'rxjs';
-import { User } from './register/register.component';
-import { LoginUser } from './login/login.component';
-import { votec } from './voting/voting.component';
+import { User } from './pages/register/register.component';
+import { LoginUser } from './pages/login/login.component';
+import { votec } from './pages/voting/voting.component';
 
 @Injectable({
   providedIn: 'root'

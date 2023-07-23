@@ -1,0 +1,23 @@
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+  
+  .space-margin{
+    margin-top: 20px;
+  }
+
+  .card_size{
+    max-width: 100%;
+  }
+
+  .example-header-image {
+    background-image: url('./../../../assets/modi.jpeg');
+    background-size: cover;
+  }

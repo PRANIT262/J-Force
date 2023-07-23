@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserServiceInterface {
 	@Override
 	public IndianUser createProfile(IndianUser indianUser) {
 		fd.save(indianUser);
-		System.out.println(indianUser.getUserName());
+//		System.out.println(indianUser.getUserName());
 		return indianUser;
 	}
 

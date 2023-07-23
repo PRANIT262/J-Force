@@ -1,0 +1,76 @@
+<app-navbar></app-navbar>
+<div class="bootstrap-wrapper" style="overflow: hidden;">
+
+
+    <div class="row">
+
+        <div class="col-lg-6">  <img src=".//../../../assets/login.png" alt="Login Page" class="img"></div>
+        <div class="col-lg-6">
+
+            <div class="row mt20">
+
+                <div class="col-md-1"></div>
+                <div class="col-md-9">
+
+                    <mat-card class="pad20 mt20">
+                        <div class="container text-center" >
+                            <img class="logo" src="./../../../assets/login_logo.png" alt="Register image" >
+                        </div>
+                        <p class="text-style-s text-center mt10">Register here!</p>
+                        <form (ngSubmit)="onSubmit()" action="/submit-myForm" method="post">
+
+                            <mat-form-field appearance="outline"
+                            class="full-width mt10">
+                                <mat-label>USERNAME</mat-label>
+                                <input matInput placeholder="Username" id="userName" required name="userName"
+                                    [(ngModel)]="user.userName" />
+                            </mat-form-field>
+
+                            <mat-form-field appearance="outline"
+                            class="full-width">
+                                <mat-label>PASSWORD</mat-label>
+                                <input matInput id="password" name="password" [(ngModel)]="user.password"
+                                    placeholder="Password" required>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="outline"
+                            class="full-width">
+                                <mat-label>Email</mat-label>
+                                <input matInput id="email" name="email" [(ngModel)]="user.email"
+                                    placeholder="Ex. pranit@19@gmail.com" required>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="outline"
+                            class="full-width">
+                                <mat-label>PHONE NO</mat-label>
+                                <input matInput id="phoneNumber" name="phoneNumber" [(ngModel)]="user.phoneNumber"
+                                    placeholder="0999999999" required>
+                            </mat-form-field>
+
+
+                            <div class="text-center">
+                                <button  mat-raised-button color="primary" type="submit">Register</button>
+                            </div>
+                            <div class="text-center mt20">
+                                
+                                <a routerLink="/login">Already have an account?</a>
+                            </div>
+
+                        </form>
+                    </mat-card>
+
+                </div>
+                <div class="col-md-2"></div>
+
+            </div>
+
+
+
+        </div>
+        
+
+
+    </div>
+
+
+</div>
